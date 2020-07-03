@@ -1,0 +1,302 @@
+.page {
+	padding-top: 80rem;
+	&__head {
+		&-wrap {
+			align-items: flex-end;
+		}
+	}
+	&__breadcrumbs {
+		margin-bottom: 17rem;
+	}
+	.gallery-section {
+		padding-top: 60rem;
+	}
+	&__video {
+		padding-top: 60rem;
+		&-title {
+			text-align: center;
+			margin-bottom: 60rem;
+		}
+	}
+	&__about {
+		padding: 65rem 0 70rem 0;
+		&_big {
+			padding: 85rem 0 90rem 0;
+			background: #f7f6f4;
+			.page__about-title {
+				padding-bottom: 15rem;
+			}
+		}
+		&-logo {
+			width: 250rem;
+			display: block;
+			margin-bottom: 25rem;
+		}
+		&-column {
+			width: 50%;
+			padding: 0 15px;
+			font-size: 18rem;
+			line-height: 28/18*1;
+			@include letter-spacing(18,20);
+			&:first-child {
+				padding-right: 70rem;
+			}
+		}
+		&-row {
+			margin: 0 -15px;
+		}
+		&-title {
+			font-weight: 500;
+			margin-bottom: 40rem;
+		}
+		&-statistics {
+			margin-top: 100rem;
+		}
+		&-stat {
+			width: 100%;
+			margin-top: 30rem;
+			margin-bottom: 40rem;
+			&-item {
+				line-height: 1;
+				&:not(:first-child) {
+					border-left: 1px solid rgba(#000, .1);
+				}
+				&:first-child {
+					width: 45%;
+				}
+				&:last-child {
+					width: 55%;
+				}
+			}
+			&-number {
+				font-size: 60rem;
+				margin-bottom: 25rem;
+			}
+			&-text {
+				font-size: 17rem;
+				@include letter-spacing(17,20);
+				font-weight: 500;
+			}
+		}
+	}
+	&__buy {
+		margin-top: 50rem;
+	}
+	&__banks {
+		padding: 1px 0 95rem 0;
+		.banks__box {
+			position: relative;
+			margin-top: -70rem;
+		}
+	}
+	&__contact {
+		border-top: 0;
+		padding-top: 10rem;
+	}
+	&__recall {
+		&.recall_big {
+			padding-bottom: 90rem;
+		}
+		.recall__parent {
+			box-shadow: none !important;
+			border: 1px solid rgba(#000, .1);
+		}
+		&.recall_negative {
+			padding-top: 1px;
+			.recall__parent {
+				margin-top: -125rem;
+			}
+		}
+	}
+	&__catalog {
+		margin-top: 60rem;
+		padding-bottom: 105rem;
+	}
+	&__finishing {
+		padding: 50rem 0 70rem 0;
+	}
+	&__building {
+		padding: 50rem 0 110rem 0;
+	}
+	.payments {
+		padding-top: 0;
+	}
+	.calc-section {
+		padding-bottom: 140rem;
+	}
+	&__promo, .promo {
+		padding-top: 60rem;
+		padding-bottom: 110rem;
+	}
+	&__complex {
+		margin-top: 40rem;
+		padding-bottom: 90rem;
+		&-content {
+			width: 560/1336*100%;
+			p {
+				line-height: 30/16*1;
+				font-size: 16rem;
+				@include letter-spacing(16,40);
+				&:not(:last-child) {
+					margin-bottom: 30rem;
+				}
+			}
+		}
+		&-slider {
+			width: 665/1336*100%;
+		}
+		&-center {
+			.page__video {
+				padding-top: 130rem;
+			}
+			.expert {
+				padding-bottom: 275rem;
+			}
+		}
+	}
+	&__facts {
+		padding-top: 130rem;
+		padding-bottom: 110rem;
+		.facts__wrap {
+			background: none;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	.content-slider-section {
+		padding-bottom: 100rem;
+	}
+	&__construction {
+		padding: 85rem 0 170rem 0;
+	}
+}
+
+@include max-screen(1200px) {
+	.page {
+		&__about {
+			&-column {
+				&:first-child {
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.page {
+		&__breadcrumbs {
+			width: 100%;
+			order: 1;
+		}
+		&__title {
+			order: 2;
+		}
+		&__about {
+			padding-top: 40rem;
+			&-column {
+				width: 100%;
+			}
+			&_big {
+				padding-top: 85rem;
+			}
+		}
+		&__banks {
+			padding-top: 90rem;
+		}
+		&__catalog {
+			margin-top: 30rem;
+		}
+		&__about {
+			padding-bottom: 0;
+			&-stat {
+				order: 2;
+				margin-top: 40px;
+				width: calc( 100% + 30px );
+				margin-left: -15px;
+				&-item {
+					width: 50%!important;
+					text-align: center;
+					display: flex;
+					justify-content: center;
+				}
+				&-text {
+					max-width: 100px;
+					margin-left: auto;
+					margin-right: auto;
+					line-height: 1.2;
+				}
+			}
+			&-column:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+		&__complex {
+			&-content, &-slider {
+				width: 100%;
+			}
+			&-slider {
+				margin-top: 40rem;
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.page {
+		padding-top: 50px;
+		&__video {
+			padding-top: 20rem;
+			&-title {
+				margin-bottom: 30rem;
+			}
+		}
+		&__about {
+			padding-bottom: 40rem;
+			&-statistics {
+				margin-top: 60rem;
+			}
+			&_big {
+				padding-bottom: 90rem;
+			}
+		}
+		&__banks {
+			padding: 0 0 75rem 0;
+			.banks__box {
+				margin-top: 0;
+			}
+		}
+		&__building {
+			padding-bottom: 80px;
+		}
+		&__recall {
+			&.recall_big {
+				padding-bottom: 60rem;
+			}
+		}
+		.payments {
+			padding-bottom: 30px;
+		}
+		.calc-section {
+			padding-bottom: 80px;
+		}
+		&__facts {
+			padding-top: 70px;
+			padding-bottom: 60px;
+		}
+		&__complex-center {
+			.expert {
+				padding-bottom: 230rem;
+			}
+			.page__video {
+				padding-top: 80rem;
+			}
+		}
+		&__construction {
+			padding: 40rem 0 80rem 0;
+		}
+		.content-slider-section {
+			padding-bottom: 80rem;
+		}
+	}
+}

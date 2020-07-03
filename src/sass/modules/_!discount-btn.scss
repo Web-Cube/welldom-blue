@@ -1,0 +1,24 @@
+.discount-btn {
+	position: fixed!important;
+	top: 50%;
+	right: 0;
+	margin-top: -30rem;
+	z-index: 100;
+	border-radius: 35px 0 0 35px!important;
+	font-size: 16rem!important;
+	transform: translateX(100%);
+	margin-right: 70rem;
+	&:hover {
+		transform: translateX(0);
+		margin-right: 0;
+	}
+	&:before {
+		border-radius: 0!important;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.discount-btn {
+		display: none!important;
+	}
+}

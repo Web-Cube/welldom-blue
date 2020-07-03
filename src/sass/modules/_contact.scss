@@ -1,0 +1,166 @@
+.contact {
+	padding-top: 150rem;
+	font-size: 16rem;
+	&__list {
+		padding-top: 30rem;
+		margin-bottom: 60rem;
+	}
+	&__item {
+		margin-top: 30rem;
+		padding-left: 25rem;
+		&_address {
+			display: block;
+			color: #aeaeae;
+			transition: ease .2s;
+			&:hover, &.is-active {
+				color: #000;
+				.contact__link-text{
+					color: $orange;
+					border-bottom: 1px solid $orange;
+				}
+				.contact__link-icon {
+					fill: $orange;
+				}
+			}
+		}
+	}
+	&__label {
+		font-weight: 600;
+		color: rgba(#000, .7);
+		margin-bottom: 7rem;
+		display: block;
+	}
+	&__text {
+		font-size: 24rem;
+		font-weight: 500;
+		line-height: 35/24*1;
+		max-width: 380rem;
+		position: relative;
+		display: block;
+		&-icon {
+			position: absolute;
+			right: 100%;
+			margin-right: 13rem;
+			width: 13rem;
+			top: 7rem;
+			fill: rgba(#000, .3);
+			&_phone {
+				width: 16rem;
+				top: 6rem;
+				margin-right: 15rem;
+			}
+			&_email {
+				width: 20rem;
+				top: 8rem;
+				margin-right: 15rem;
+			}
+		}
+	}
+	&__map {
+		height: 610rem;
+		&-list {
+			position: relative;
+		}
+		&:not(:first-child) {
+			display: none;
+		}
+		
+		&-wrap {
+			position: relative;
+		}
+	}
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		margin-top: 10rem;
+		font-size: 18rem;
+		font-weight: 500;
+		cursor: pointer;
+		&-text {
+			color: #aeaeae;
+			border-bottom: 1px solid #aeaeae;
+			transition: ease .2s;
+		}
+		&-icon {
+			width: 21rem;
+			height: 21rem;
+			margin-left: 7rem;
+			fill: rgba(#000, .3);
+		}
+	}
+	&__button {
+		width: 305rem;
+		position: absolute;
+		z-index: 10;
+		top: 60rem;
+		right: 10%;
+	}
+}
+
+@include max-screen($large_tablet) {
+	.contact {
+		&__map {
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.contact {
+		&__item {
+			&:nth-child(1) {
+				width: 100%;
+				order: 3;
+				br {
+					display: none;
+				}
+			}
+			&:nth-child(2) {
+				width: 45%;
+				order: 1;
+			}
+			&:nth-child(3) {
+				width: 45%;
+				order: 2;
+			}
+		}
+		&__text {
+			max-width: none;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.contact {
+		padding-top: 80px;
+		&__list {
+			padding-top: 10rem;
+		}
+		&__item {
+			&:nth-child(1) {
+				br {
+					display: block;
+				}
+			}
+			&:nth-child(2) {
+				width: 100%;
+			}
+			&:nth-child(3) {
+				width: 100%;
+			}
+		}
+		&__button {
+			right: 50%;
+			transform: translateX(50%);
+			top: 40px;
+		}
+	}
+}

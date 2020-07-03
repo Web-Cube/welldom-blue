@@ -1,0 +1,223 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Ход строительства';
+	- body['classList'] = 'is-loaded';
+
+block content
+	+b.SECTION.fullscreen
+		+e.container._fix._header
+			include ../layouts/header
+			include ../layouts/nav
+		+b.page.css-light-bg
+			+e.head
+				+e.head-wrap.wrap.flex._justify
+					+e.H1.title.h1
+						| Ход строительства
+					+e.UL.breadcrumbs.breadcrumbs__
+						+e.LI.item
+							+e.A.link(href="main.html") Главная
+						+e.LI.item
+							+e.SPAN.current Ход строительства
+			+e.building.building__
+				+e.wrap.wrap
+					+e.SECTION.box
+						+e.H2.box-title
+							| Ход строительства Январь 2020
+						+e.showing.flex_vertical
+							+e.date
+								+e.date-icon
+									img(src="/img/calendar.png")
+								+e.date-text 20.02.2020
+							+e.views
+								+e.views-icon
+									+icon('eye','0 0 24.969 14')
+								+e.views-text 103
+						+b.gallery.autowidth-slider.js-have-bottom.js-inside-nav.js-building-gallery.owl-carousel.js-gallery
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+							+e.A.slide(href="/app/img/building__img3.jpg")
+								+e.IMG.pic(src="/img/building__img3.jpg")
+							+e.A.slide(href="/app/img/building__img4.jpg")
+								+e.IMG.pic(src="/img/building__img4.jpg")
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+							+e.A.slide(href="/app/img/building__img3.jpg")
+								+e.IMG.pic(src="/img/building__img3.jpg")
+							+e.A.slide(href="/app/img/building__img4.jpg")
+								+e.IMG.pic(src="/img/building__img4.jpg")
+						+e.nav.owl-scrollbar__._dark
+							+e.part._progress
+								+e.line
+									+e.path
+										+e.done
+							+e.part._num
+								+e.text 
+									span 01
+									|  / 05 
+							+e.part._nav.flex
+								+e.buttons-here.flex
+									+b.owl-arrow._left._black
+										+e.SVG.border(viewBox='30 30 60 60')
+											+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+										+e.item
+									+b.owl-del
+									+b.owl-arrow._right._black
+										+e.SVG.border(viewBox='30 30 60 60')
+											+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+										+e.item
+										+e.autoplay
+											+e.SVG.autoplay-border(viewBox='30 30 60 60')
+												+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+					+e.SECTION.box
+						+e.H2.box-title
+							| Ход строительства Январь 2020
+						+e.showing.flex_vertical
+							+e.date
+								+e.date-icon
+									img(src="/img/calendar.png")
+								+e.date-text 20.02.2020
+							+e.views
+								+e.views-icon
+									+icon('eye','0 0 24.969 14')
+								+e.views-text 103
+						+b.gallery.autowidth-slider.js-have-bottom.js-inside-nav.js-building-gallery.owl-carousel.js-gallery
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+							+e.A.slide(href="/app/img/building__img3.jpg")
+								+e.IMG.pic(src="/img/building__img3.jpg")
+							+e.A.slide(href="/app/img/building__img4.jpg")
+								+e.IMG.pic(src="/img/building__img4.jpg")
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+						+e.nav.owl-scrollbar__._dark
+							+e.part._progress
+								+e.line
+									+e.path
+										+e.done
+							+e.part._num
+								+e.text 
+									span 01
+									|  / 05 
+							+e.part._nav.flex
+								+e.buttons-here.flex
+									+b.owl-arrow._left._black
+										+e.SVG.border(viewBox='30 30 60 60')
+											+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+										+e.item
+									+b.owl-del
+									+b.owl-arrow._right._black
+										+e.SVG.border(viewBox='30 30 60 60')
+											+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+										+e.item
+										+e.autoplay
+											+e.SVG.autoplay-border(viewBox='30 30 60 60')
+												+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+					+e.SECTION.box
+						+e.H2.box-title
+							| Ход строительства Январь 2020
+						+e.showing.flex_vertical
+							+e.date
+								+e.date-icon
+									img(src="/img/calendar.png")
+								+e.date-text 20.02.2020
+							+e.views
+								+e.views-icon
+									+icon('eye','0 0 24.969 14')
+								+e.views-text 103
+						+b.gallery.autowidth-slider.js-have-bottom.js-inside-nav.js-building-gallery.owl-carousel.js-gallery
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+							+e.A.slide(href="/app/img/building__img3.jpg")
+								+e.IMG.pic(src="/img/building__img3.jpg")
+							+e.A.slide(href="/app/img/building__img4.jpg")
+								+e.IMG.pic(src="/img/building__img4.jpg")
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+							+e.A.slide(href="/app/img/building__img3.jpg")
+								+e.IMG.pic(src="/img/building__img3.jpg")
+							+e.A.slide(href="/app/img/building__img4.jpg")
+								+e.IMG.pic(src="/img/building__img4.jpg")
+							+e.A.slide(href="/app/img/building__img1.jpg")
+								+e.IMG.pic(src="/img/building__img1.jpg")
+							+e.A.slide(href="/app/img/building__img2.jpg")
+								+e.IMG.pic(src="/img/building__img2.jpg")
+							+e.A.slide(href="/app/img/building__img3.jpg")
+								+e.IMG.pic(src="/img/building__img3.jpg")
+							+e.A.slide(href="/app/img/building__img4.jpg")
+								+e.IMG.pic(src="/img/building__img4.jpg")
+						+e.nav.owl-scrollbar__._dark
+							+e.part._progress
+								+e.line
+									+e.path
+										+e.done
+							+e.part._num
+								+e.text 
+									span 01
+									|  / 05 
+							+e.part._nav.flex
+								+e.buttons-here.flex
+									+b.owl-arrow._left._black
+										+e.SVG.border(viewBox='30 30 60 60')
+											+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+										+e.item
+									+b.owl-del
+									+b.owl-arrow._right._black
+										+e.SVG.border(viewBox='30 30 60 60')
+											+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+										+e.item
+										+e.autoplay
+											+e.SVG.autoplay-border(viewBox='30 30 60 60')
+												+e.CIRCLE.path(cx='60', cy='60', r='29', fill='none')
+			+e.recall.recall__._big.css-black-bg#view(data-aos="recall-aos" data-aos-offset="200")
+				+e.wrap.wrap
+					+e.parent
+						+e.box.flex
+							+e.icon
+								+b.IMG.icon(src="/img/loupe.png")
+							+e.cell._image
+								+e.IMG.image.object-fit(src='/img/recall.jpg')
+							+e.cell._content
+								+e.center
+									+e.title.h2 
+										| Посмотрите квартиры
+									+e.text.p
+										| Взгляните лично. Устроим вам 30 минутную экскурсию по 
+										| территории ЖК Шереметьевский
+								+e.FORM.form.form__
+									+e.thank.flex._vertical._center
+										+e.thank-center
+											+e.thank-title.h2
+												| Ваша заявка успешно отправлена
+											+e.thank-text.p
+												| Менеджер свяжется с Вами в ближайшее время
+									+e.INPUT(type="hidden" name="form" value="form 1")
+									+e.item
+										+e.INPUT.input(type="text" name="name" placeholder="Имя" required="")
+										+e.icon
+											+icon('man-user', '0 0 350 350')
+									+e.item
+										+e.INPUT.input(type="text" name="phone" placeholder="Телефон" required="")
+										+e.icon
+											+icon('call-answer', '0 0 348.077 348.077')
+									+e.BUTTON.button.flat-button__
+										+e.text Записаться на просмотр
+									+e.LABEL.accept.checkbox__
+										+e.INPUT.input(type="checkbox" name="accept" checked="")
+										+e.SPAN.text.middle
+											| Нажимая на кнопку, вы даете согласие на обработку
+											| персональных данных и соглашаетесь c политикой
+											| конфиденциальности
+								

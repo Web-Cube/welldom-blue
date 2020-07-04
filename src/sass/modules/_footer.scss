@@ -74,19 +74,17 @@
 
 		&-link{
 			text-decoration: none;
-			color: #fff;
-			transition: ease .15s;
+			transition: ease .2s;
 			font-weight: 600;
 
-			&:hover{
+			&:hover, &_current{
 				color: $orange;
 			}
 		}
 	}
 
 	&__link{
-
-		color: #fff;
+		
 		line-height: 25rem;
 		font-weight: bold;
 		display: inline-block;
@@ -95,7 +93,7 @@
 			display: inline-block;
 			line-height: 1em;
 			transition: border-bottom-color ease .15s;
-			border-bottom: 1rem solid #fff;
+			border-bottom: 1rem solid #ababab;
 		}
 
 
@@ -162,10 +160,6 @@
 		@include max-screen($small_mobile) {
 			width: 100%;
 		}
-	}
-	
-	.horizontal-messengers__link svg {
-		fill: #fff!important;
 	}
 
 	&__bottom{

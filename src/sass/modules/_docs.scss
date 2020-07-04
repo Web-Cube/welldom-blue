@@ -102,7 +102,7 @@
 		border-radius: 5rem;
 		overflow: hidden;
 		position: relative;
-		background-color: #242424;
+		background-color: #fff;
 		box-shadow: 0rem 0rem 100rem 0rem rgba(108, 108, 108, 0.1);
 		transition: ease .25s;
 
@@ -131,7 +131,7 @@
 
 		svg{
 			height: 37rem;
-			fill: rgba(#fcfbfa, .5);
+			fill: rgba(#000, .7);
 			transition: ease .25s;
 
 		}
@@ -146,8 +146,7 @@
 	&__text{
 		font-weight: 500;
 		line-height: 20rem;
-		color: #fcfbfa;
-		transition: ease .25s;
+		color: rgba(0,0,0,.7);
 		transition: ease .25s;
 	}
 }

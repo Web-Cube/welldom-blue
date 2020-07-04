@@ -30,7 +30,10 @@
 		.owl-stage-outer {
 		    padding: 100rem 0;
 		    margin: -100rem 0;
-		}		
+		}
+		+ .promo__bottom {
+			border-top: 0;
+		}
 	}
 
 	&__item{

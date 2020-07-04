@@ -22,7 +22,6 @@
 		padding: 65rem 0 70rem 0;
 		&_big {
 			padding: 85rem 0 90rem 0;
-			background: #f7f6f4;
 			.page__about-title {
 				padding-bottom: 15rem;
 			}
@@ -83,10 +82,9 @@
 		margin-top: 50rem;
 	}
 	&__banks {
-		padding: 1px 0 95rem 0;
+		padding: 95rem 0;
 		.banks__box {
 			position: relative;
-			margin-top: -70rem;
 		}
 	}
 	&__contact {
@@ -159,12 +157,13 @@
 		padding-bottom: 110rem;
 		.facts__wrap {
 			background: none;
+			border: 0;
 			padding-top: 0;
 			padding-bottom: 0;
 		}
 	}
 	.content-slider-section {
-		padding-bottom: 100rem;
+		padding-bottom: 50rem;
 	}
 	&__construction {
 		padding: 85rem 0 170rem 0;
@@ -261,7 +260,7 @@
 			}
 		}
 		&__banks {
-			padding: 0 0 75rem 0;
+			padding: 75rem 0;
 			.banks__box {
 				margin-top: 0;
 			}
@@ -296,7 +295,7 @@
 			padding: 40rem 0 80rem 0;
 		}
 		.content-slider-section {
-			padding-bottom: 80rem;
+			padding-bottom: 10rem;
 		}
 	}
 }

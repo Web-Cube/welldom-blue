@@ -7,7 +7,8 @@
 	&__item {
 		width: 810rem;
 		text-align: center;
-		background: #262626;
+		background: #fff;
+		border: 1px solid rgba(0,0,0,.102);
 		border-radius: 10px;
 		padding: 90rem 30rem;
 		img {
@@ -29,12 +30,6 @@
 		line-height: 25rem;
 	}
 	&-section {
-		.owl-scrollbar__text {
-			color: rgba(#fbfaf8, .5);
-			span {
-				color: #fff;
-			}
-		}
 		.page__nav {
 			margin-top: 30rem;
 		}
